@@ -21,7 +21,6 @@
 		border: 1px solid transparent
 		color: $white
 
-
 	&--white
 		border: 1px solid $white
 		background-color: #ffffff
@@ -31,4 +30,35 @@
 		&:focus
 			box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25)
 			color: $green
+
+	&--blue
+		max-width: 100%
+		background-color: $accent
+		border: 1px solid transparent
+		width: 100%
+		margin-bottom: 20px
+		justify-content: flex-start
+		padding-left: 85px
+
+		&:hover,
+		&:focus
+			box-shadow: 0px 20px 20px rgba($accent, 0.4)
+
+		&:last-child
+			margin-bottom: 0
+
+		svg
+			margin-right: 15px
+
+		+r(992)
+			padding: 0 40px
+
+		+r(767)
+			justify-content: center
+
+		+r(480)
+			padding: 0 20px
+
+
+
 
