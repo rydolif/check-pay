@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="img/previews.png">
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__container container">
+
+			<a href="/" class="header__logo header__logo">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+
+			<a href="#" class="btn btn--white">Войти</a>
+
+		</div>
+	</header>
+
+	<section class="hero">
+		<div class="hero__container container">
+
+			<div class="hero__content">
+				<h1>Управляй своими деньгами с комфортом!</h1>
+				<p>
+					Современные платежные технологии для продвинутых людей
+				</p>
+				<a href="#" class="btn">Создать кошелек</a>
+			</div>
+
+			<div class="hero__img">
+				<img src="img/hero__img.png" alt="">
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="services__header">
+		<div class="container">
+			<div class="">
+				<h2>Наши сервисы - Ваши преимущества!</h2>
+				<p><b>Полный набор платежных инструментов для ваших задач в одном аккаунте</b></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="services__content">
+		<div class="services__container container">
+			<div>
+				<h3>Получайте выплаты от работодателей</h3>
+				<p>
+					Ведите свое дело в режиме самозанятого:
+					<br> принимайте платежи, платите налоги, регистрируйте доход.
+				</p>
+			</div>
+			<div>
+				<img src="img/services1.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="services__content--reverse services__content">
+		<div class="services__container--reverse services__container container">
+			<div>
+				<h3>Отправляйте денежные переводы</h3>
+				<p>
+					Забудьте про банковские отделения и наличные.
+					<br>Высылайте деньги друзьям в один клик по номеру карты.
+				</p>
+			</div>
+			<div>
+				<img src="img/services2.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="services__content">
+		<div class="services__container container">
+			<div>
+				<h3>Оплачивайте онлайн-игры и сервисы</h3>
+				<p>
+					Мы поддерживаем пополнение аккаунтов всех
+					<br>популярных игровых платформ
+				</p>
+			</div>
+			<div>
+				<img src="img/services3.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="services__content--reverse services__content">
+		<div class="services__container--revers services__container container">
+			<div>
+				<h3>Переводите деньги на карты и кошельки</h3>
+				<p>
+					Вам доступны выплаты на карты, Qiwi, WebMoney
+					<br>и Яндекс.Деньги
+				</p>
+			</div>
+			<div>
+				<img src="img/services4.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="services__footer">
+		<div class="container">
+
+			<h2>Начните пользоваться прямо сейчас!</h2>
+
+			<div class="services__footer_btn">
+				<img src="img/arrow.svg" alt="">
+				<a href="#" class="btn">Создать кошелек</a>
+				<img src="img/arrow2.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container container">
+
+			<div class="footer__info">
+				<p>ООО “Чекпей”</p>
+				<p>ИНН 7708816952</p>
+				<p>125212, г. Москва, Головинское шоссе, 5/1</p>
+				<p>БЦ "Водный", <a href="tel:+74953748189">+7 495 374 81 89</a></p>
+				<p><a href="mailto:support@checkpay.com">support@checkpay.com</a></p>
+
+				<ul>
+					<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/twiter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/card.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/viza.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/pci.svg" alt=""></a></li>
+				</ul>
+			</div>
+
+			<nav class="footer__nav">
+				<ul>
+					<li><a href="#">Оферта</a></li>
+					<li><a href="#">Тарифы</a></li>
+					<li><a href="#">Вопросы и ответы</a></li>
+					<li><a href="#">Для разработчиков</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+	<div class="modal" id="order">
+		<form action="sendmail.php" class="form" method="post">
+
+			<button class="close order_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
+			<input type="hidden" name="subject" value="Узнать подробнее!">
+
+			<div class="">
+				<input type="text" name="name" placeholder="Имя" required>
+			</div>
+			<div class="">
+				<input type="tel" name="phone" placeholder="Телефон" required>
+			</div>
+			<div class="">
+				<button type="submit" class="btn" name="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal" id="thanks">
+		<button class="close thanks_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+		<h3>Спасибо за доверие!</h3>
+		<p>Мы обязательно с вами свяжемся!</p>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
