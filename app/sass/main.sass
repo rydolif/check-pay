@@ -444,8 +444,9 @@
 	min-height: 100vh
 	display: flex
 	justify-content: center
+	flex-direction: column
 	align-items: center
-	padding: 150px 0
+	padding: 180px 0 100px
 
 	&__form
 		padding: 30px 25px 40px
@@ -460,7 +461,7 @@
 
 		&_line
 			position: relative
-			padding-bottom: 30px
+			padding-bottom: 25px
 
 		h3
 			font-size: 24px
@@ -618,6 +619,73 @@
 			.active
 				color: $accent
 				border-bottom: 3px solid $accent
+
+		&_data
+			background-image: url(../img/data.png)
+			background-repeat: no-repeat
+			background-position: 95% center
+
+.verification
+	max-width: 565px
+
+	button
+		display: block
+		max-width: 375px
+		margin: 0 auto
+
+	&__back
+		display: flex
+		align-items: center
+		justify-content: space-between
+		text-transform: uppercase
+		font-size: 20px
+		letter-spacing: .4px
+		margin-bottom: 35px
+		max-width: 565px
+		width: 100%
+
+		a
+			display: flex
+			align-items: center
+			color: $text
+			font-weight: 700
+			margin-right: 5px
+			+transition
+
+			&:hover,
+			&:focus
+				
+				span
+					transform: translate(-10px, 0)
+
+		span
+			+transition
+			position: relative
+			display: block
+			width: 36px
+			height: 36px
+			border-radius: 50%
+			margin-right: 15px
+			background-color: $white
+
+			&::before
+				content: ""
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-35%, -50%) rotate(-45deg)
+				display: block
+				width: 10px
+				height: 10px
+				border-top: 3px solid $accent
+				border-left: 3px solid $accent
+
+		i
+			display: block
+			background-color: rgba(#000, .12)
+			height: 1px
+			width: 100%
+
 
 
 @import "page"

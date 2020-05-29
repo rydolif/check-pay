@@ -1,6 +1,7 @@
 form
 
 input, textarea, select
+	+transition
 	width: 100%
 	border: 1px solid #ebebeb
 	outline: none
@@ -16,7 +17,7 @@ input, textarea, select
 		-webkit-appearance: none
 
 	&:required:valid
-		border-color: green
+		border-color: $accent
 		outline: none
 		box-shadow: none
 		-webkit-appearance: none
