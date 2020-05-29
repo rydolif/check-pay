@@ -458,21 +458,22 @@
 			padding: 20px
 
 		&_line
-			margin-bottom: 30px
+			position: relative
+			padding-bottom: 30px
 
 		h3
 			font-size: 24px
-			margin-bottom: 35px
+			margin-bottom: 20px
 			text-align: center
-
-		input
-			margin-bottom: 8px
 
 		&_label
 			font-weight: 600
 			margin-bottom: 10px
 
 		&_error
+			position: absolute
+			bottom: 0
+			left: 0
 			font-size: 12px
 			color: $red
 
@@ -484,11 +485,78 @@
 			border-radius: 5px
 			height: 50px
 			cursor: pointer
+			font-size: 16px
+			font-weight: 600
 
 		&_ru
 			background-image: url(../img/ru.png)
 			background-repeat: no-repeat
 			background-position: 15px center
+
+		&_subtitle
+			font-size: 18px
+			margin-bottom: 25px
+			text-align: center
+
+			+r(992)
+				font-size: 16px
+				margin-bottom: 10px
+
+		&_text
+			color: #828282
+			font-size: 16px
+			margin-bottom: 20px
+
+			+r(992)
+				font-size: 14px
+
+		&_check
+			position: relative
+			margin-top: 20px
+
+			+r(992)
+				margin-top: 15px
+
+			label
+				position: relative
+				padding-left: 30px
+				color: #2f3441
+				cursor: pointer
+				font-size: 14px
+				margin-bottom: 0
+				margin-right: 0
+
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					left: 0
+
+				&::before
+					top: 5px
+					width: 18px
+					height: 18px
+					border: 2px solid $accent
+
+				&::after
+					width: 5px
+					height: 11px
+					border-top: 2px solid $accent
+					border-left: 2px solid $accent
+					left: 7px
+					top: 7px
+					transition: all .6s
+
+			input[type="checkbox"]
+				display: none
+
+			input[type="checkbox"]:checked + label::after
+				transform: rotate(-140deg) scale(1)
+
+			input[type="checkbox"] + label::after
+				transform: scale(0)
+
+
 
 
 @import "page"
