@@ -313,8 +313,9 @@
 
 		+r(767)
 			font-size: 30px
-		
-		+r(767)
+			text-align: center
+
+		+r(576)
 			font-size: 24px
 
 	p
@@ -329,6 +330,7 @@
 		+r(767)
 			font-size: 14px
 			margin-bottom: 20px
+			text-align: center
 
 	&__content
 		width: 55%
@@ -385,7 +387,6 @@
 			font-size: 18px
 
 		+r(767)
-			text-align: left
 			font-size: 14px
 
 		b
@@ -406,6 +407,7 @@
 
 		+r(767)
 			padding: 70px 0
+			text-align: center
 
 		img
 			position: absolute
@@ -452,7 +454,6 @@
 
 		+r(767)
 			padding: 70px 0
-			text-align: left
 
 		h2
 			font-size: 30px
@@ -496,6 +497,10 @@
 
 	+r(992)
 		font-size: 14px
+
+	+r(767)
+		text-align: center
+		padding: 30px 0
 
 	a
 		color: $white
@@ -542,6 +547,10 @@
 		+r(767)
 			width: 100%
 		
+		ul
+			+r(767)
+				justify-content: center
+
 	&__nav
 
 		+r(767)
@@ -560,6 +569,8 @@
 
 			+r(767)
 				margin-bottom: 5px
+				margin-right: 0
+				width: 100%
 
 
 .main
@@ -570,6 +581,9 @@
 	flex-direction: column
 	align-items: center
 	padding: 180px 0 100px
+
+	+r(992)
+		padding-top: 100px
 
 	&__form
 		padding: 30px 25px 40px
